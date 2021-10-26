@@ -1,0 +1,41 @@
+spring:
+  profiles:
+    active:
+    - dev-1
+---
+server:
+  port: 3311
+  
+spring:
+  profiles: dev-1
+  application:
+    name: freedom-config-eureka-client-1
+    
+eureka:
+  instance:
+    hostname: eureka3311.com
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:3311/eureka/
+---
+server:
+  port: 3312
+  
+spring:
+  profiles: dev-2
+  application:
+    name: freedom-config-eureka-client-2
+    
+eureka:
+  instance:
+    hostname: eureka3312.com
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:3312/eureka/
+      

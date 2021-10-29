@@ -19,7 +19,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:3312/eureka/
+      defaultZone: http://120.77.238.28:3312/eureka/
 ---
 server:
   port: 3312
@@ -37,5 +37,5 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:3311/eureka/
+      defaultZone: http://1.116.42.103:3311/eureka/
       

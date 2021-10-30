@@ -21,7 +21,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://1.116.42.103:3306/freedom
     username: root
-    password: root
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -31,7 +31,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://1.116.42.103:3311/eureka,http://120.77.238.28:3312/eureka
+      defaultZone: http://1.116.42.103:3311/,http://120.77.238.28:3312/
   instance:
     instance-id: freedom-user:3321
     prefer-ip-address: true
@@ -74,7 +74,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://1.116.42.103:3306/freedom
     username: root
-    password: root
+    password: 123456
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -85,7 +85,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://1.116.42.103:3311/eureka,http://120.77.238.28:3312/eureka
+      defaultZone: http://1.116.42.103:3311/,http://120.77.238.28:3312/
   instance:
     instance-id: freedom-user:3322
     prefer-ip-address: true
